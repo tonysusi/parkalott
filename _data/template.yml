@@ -1,0 +1,13 @@
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 0072BC
+  secondary: 004470
+  secondary-dark: 333
+  muted: 777
+
+# Font Families
+font:
+  primary: 'Work Sans, "Helvetica Neue",Helvetica,Arial,sans-serif'
+  secondary: 'Work Sans, "Helvetica Neue", Helvetica,Arial,sans-serif'
+  tertiary: 'Work Sans, "Helvetica Neue", Helvetica,Arial,sans-serif'
+
