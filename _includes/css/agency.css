@@ -692,7 +692,7 @@ section#contact .form-group {
 
 section#contact .form-group input,
 section#contact .form-group textarea {
-    padding: 20px;
+/*    padding: 20px;*/
 }
 
 section#contact .form-group input.form-control {
@@ -739,6 +739,12 @@ section#contact:-ms-input-placeholder {
 section#contact .text-danger {
     color: #e74c3c;
 }
+
+section#contact label {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
 
 footer {
     padding: 25px 0;
