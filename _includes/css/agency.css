@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "{{ site.data.template.font.secondary }}","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Work sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -19,15 +19,16 @@ body {
 }
 
 p {
+    font-size: 18.2px;
     font-weight: 300;
-    line-height: 1.6;
-    letter-spacing: -0.02em;
+    line-height: 23.6px;
+/*    letter-spacing: -0.364px;*/
     color: #6c6f73;
+    text-size-adjust: 100%;
+    margin-bottom: 21px;
+    box-sizing: border-box;
 }
 
-p.large {
-    font-size: 20px;
-}
 
 a,
 a:hover,
@@ -56,7 +57,25 @@ h5,
 h6 {
 /*    text-transform: uppercase;*/
     font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
+}
+
+h2{
+        font-size: 32px;
+        margin-bottom: 36px;
+    margin-top: 10.5px;
+}
+
+h6,
+label{
+    font-weight:500;
+    font-size: 14px;
+    color:#BEC8CE;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+}
+
+strong {
+    font-weight: bold;
 }
 
 .img-centered {
@@ -270,13 +289,15 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
+    background-color: #004470;
 }
 
 header .intro-text {
     position: absolute;
     top: 0;
-    margin: auto 25%;
-    padding-top: 25%;
+    margin: auto;
+    padding: 20%;
+    width: 100%;
 }
 
 
@@ -307,40 +328,44 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 
-header .intro-text .intro-heading {
-    margin-bottom: 25px;
+header .intro-text .intro-heading,
+#contact .intro-heading{
+    margin-bottom: 0px;
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 36px;
+    color:#FFF;
 }
 
 
 @media(min-width:768px) {
     header .intro-text {
-/*
-        padding-top: 300px;
-        padding-bottom: 200px;
-*/
-    }
-
-    header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-        font-size: 30px;
-        font-style: italic;
-        line-height: 30px;
+        margin: auto 25%;
+        padding: 25% 0 0 0;
+        width: auto;
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 55px;
+        font-size: 50px;
         font-weight: 700;
-        line-height: 55px;
+        line-height: 50px;
     }
+}
+
+@media(max-width:460px) {
+    header .intro-text .intro-heading{
+        font-size: 28px;
+        line-height: 28px;
+    }
+    header .intro-text h6{
+        margin: 5px 0;
+    }
+
 }
 
 section {
@@ -356,15 +381,21 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: {{ site.data.template.font.primary }};
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
 }
 
+section p.description{
+    font-size: 15px;
+    line-height: 21px;
+
+}
+
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 100px 0;
     }
 }
 
@@ -436,7 +467,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: {{ site.data.template.font.primary }};
     font-size: 16px;
     font-style: italic;
 }
@@ -675,6 +706,13 @@ aside.clients img {
     margin: 50px auto;
 }
 
+section#about {
+    background-color: #004470;
+    padding: 50px 0;
+    color:#FFF;
+}
+
+
 section#contact {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/ep_naturalblack.png');
@@ -740,11 +778,24 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
-section#contact label {
-    color: #FFFFFF;
-    text-transform: uppercase;
+section#contact p {
+    color: rgba(255, 255, 255, .7);
 }
 
+section#contact label {
+    letter-spacing: .3px;
+}
+
+section#contact .intro-heading{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+section#contact form{
+    padding-top: 30px;
+}
 
 footer {
     padding: 25px 0;
@@ -820,7 +871,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: {{ site.data.template.font.secondary }};
+    font-family: {{ site.data.template.font.primary }};
     font-size: 16px;
     font-style: italic;
 }
