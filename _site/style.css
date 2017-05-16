@@ -86,6 +86,15 @@ strong {
     font-weight: bold;
 }
 
+section .intro-heading{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+
 .img-centered {
     margin: 0 auto;
 }
@@ -336,8 +345,7 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 
-header .intro-text .intro-heading,
-#contact .intro-heading{
+header .intro-text .intro-heading{
     margin-bottom: 0px;
     text-transform: uppercase;
     font-family: Work Sans, "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -720,8 +728,20 @@ section#about {
     color:#FFF;
 }
 
+@media(min-width:992px) {
+
+    section#about {
+    padding: 50px 0 0;
+}
+
+}
+
 section#about p {
     color:#FFFFFF;
+}
+
+section#services .intro-heading{
+    color: #333;
 }
 
 
@@ -732,7 +752,8 @@ section#contact {
     background-repeat: repeat;
 }
 
-section#contact .section-heading {
+section#contact .section-heading,
+section#contact .intro-heading{
     color: #fff;
 }
 
@@ -799,13 +820,6 @@ section#contact label {
     letter-spacing: .3px;
 }
 
-section#contact .intro-heading{
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-size: 36px;
-    line-height: 36px;
-}
-
 section#contact form{
     padding-top: 30px;
 }
@@ -814,9 +828,24 @@ section#faq{
     background-color: #F4F5F6;
 }
 
+.faq-question{
+    font-weight:bold;
+    border-bottom: 1px solid #BEC8CE;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.faq-answer{
+        padding-top: .5em;
+    padding-bottom: 1.5em;
+}
+
+
 footer {
     padding: 25px 0;
     text-align: center;
+    background-color: #222;
+    color:#FFFFFF;
 }
 
 footer span.copyright {
