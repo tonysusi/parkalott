@@ -724,8 +724,16 @@ aside.clients img {
 
 section#about {
     background-color: #004470;
-    padding: 50px 0 0;
+    padding: 50px 0;
     color:#FFF;
+}
+
+@media(min-width:992px) {
+
+    section#about {
+    padding: 50px 0 0;
+}
+
 }
 
 section#about p {
@@ -819,6 +827,19 @@ section#contact form{
 section#faq{
     background-color: #F4F5F6;
 }
+
+.faq-question{
+    font-weight:bold;
+    border-bottom: 1px solid #BEC8CE;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.faq-answer{
+        padding-top: .5em;
+    padding-bottom: 1.5em;
+}
+
 
 footer {
     padding: 25px 0;
