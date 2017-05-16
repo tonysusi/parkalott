@@ -712,6 +712,10 @@ section#about {
     color:#FFF;
 }
 
+section#about p {
+    color:#FFFFFF;
+}
+
 
 section#contact {
     background-color: #222;
@@ -778,7 +782,8 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
-section#contact p {
+section#contact p,
+section#contact h4 {
     color: rgba(255, 255, 255, .7);
 }
 
@@ -795,6 +800,10 @@ section#contact .intro-heading{
 
 section#contact form{
     padding-top: 30px;
+}
+
+section#faq{
+    background-color: #F4F5F6;
 }
 
 footer {
