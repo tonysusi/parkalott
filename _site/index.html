@@ -50,6 +50,7 @@
                 <li> <a class="page-scroll hide" href="#portfolio">Portfolio</a> </li>
                 <li> <a class="page-scroll" href="#contact">Free trial</a> </li>
                 <li> <a class="page-scroll" href="#faq">FAQs</a> </li>
+                <li> <a href="#contactModal" data-toggle="modal">Contact us </a> </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -58,14 +59,12 @@
 </nav>
 <!-- Header -->
 <header>
-    <!--
-    <div class="intro-text">
-        <div class="intro-heading">More faces than spaces</div>
-    </div>
--->
     <div class="intro-video">
-        <video autoplay loop muted poster="img/header-bg.jpg" id="video">
-            <source src="img/v/parking.mp4" type="video/mp4"> </video>
+        <video autoplay loop muted poster="img/header-bg.png" id="video">
+            <source src="img/v/parking.webm" type="video/webm">
+            <source src="img/v/parking.ogv" type="video/ogg">
+            <source src="img/v/parking.mp4" type="video/mp4">
+        </video>
         <div class="overlay">
             <div class="intro-text">
                 <div class="intro-heading">More faces than spaces?</div>
@@ -73,23 +72,18 @@
         </div>
     </div>
 </header>
-<!--
-        
-          
-        
-          
-        
-          
-        
- -->
 
     <!-- About Section -->
 <section id="about">
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <h6>Got more staff than parking spaces?<br>Is juggling limited spaces a daily hassle?</h6>
+
                 <div class="intro-heading">Introducing PARKALOTT</div>
+                <ul>
+                <li>Got more staff than parking spaces?</li>
+                <li>Is juggling limited spaces a daily hassle?</li>
+                </ul>
                 <p>If you’re an Auckland business with more demand for parking than supply, PARKALOTT makes it easy to manage your spaces. This easy-to-use solution doesn’t require expensive on-site hardware and it’s available for as little as $50 a month.</p>
             </div>
             <div class="col-md-2 col-md-offset-1 visible-lg visible-md">
@@ -133,67 +127,70 @@
     <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-<!--                <h6>Try before you buy</h6>-->
+            <div class="col-md-10 col-md-offset-1">
                 <div class="intro-heading">Get PARKLALOTT FREE for 3 months</div>
-                <p>Call &lt;telephone number&gt; or complete the short form below and you could try PARKALOTT FREE for 3 months. It’s a great way to see how PARKALOTT can improve your workplace parking - and there’s no obligation after the trial period. </p>
+                <p>Complete the short form below and you could try PARKALOTT FREE for 3 months. It’s a great way to see how PARKALOTT can improve your workplace parking - and there’s no obligation after the trial period. </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="control-group form-group">
-                                <label for="name">Your name *</label>
-                                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group form-group">
-                                <label for="email">Your Email *</label>
-                                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group form-group">
-                                <label for="phone">Your Phone *</label>
-                                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group form-group">
-                                <label for="demand">Do you have greater demand for parking than supply?*</label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="demandOptions" id="demandYes" value="yes"> Yes </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="demandOptions" id="demandNo" value="no"> No </label>
-                            </div>
+            <div class="col-md-10 col-md-offset-1">
+                <form class="form-horizontal" id="freeTrial" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2">Your name *</label>
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="Firstname Lastname" class="form-control" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
                         </div>
-                        <div class="col-md-6">
-                           <h4>Optional</h4>
-                            <div class="control-group form-group">
-                                <label for="staffDrivers">Approximately, how many of your staff drive to work?</label>
-                                <input type="number" class="form-control" id="staffDrivers" required data-validation-required-message="Please enter number of staff drivers.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group form-group">
-                                <label for="parkingSpaces">Approximately, how many spaces do you have?</label>
-                                <input type="number" class="form-control" id="parkingSpaces" required data-validation-required-message="Please enter parking spaces.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group form-group">
-                                <label for="freeSpaces">Approximately, how many spaces are free-for-all?</label>
-                                <input type="number" class="form-control" id="freeSpaces"> </div>
-                            <div class="control-group form-group">
-                                <label for="visitorSpaces">Approximately, how many spaces are for visitors?</label>
-                                <input type="number" class="form-control" id="visitorSpaces"> </div>
-                            <div class="control-group form-group">
-                                <label for="allocatedSpaces">Approximately, how many spaces are allocated to specific staff members?</label>
-                                <input type="number" class="form-control" id="allocatedSpaces"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2" for="email">Your Email *</label>
+                        <div class="col-sm-10">
+                            <input type="email" placeholder="abc@email.com" class="form-control" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                            <p class="help-block text-danger"></p>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Submit</button>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2" for="phone">Your Phone *</label>
+                        <div class="col-sm-10">
+                            <input type="tel" placeholder="0220 123 456" class="form-control" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                            <p class="help-block text-danger"></p>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <label for="demand">Do you have greater demand for parking than supply?*</label>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="col-sm-2">
+                            <label class="radio-inline">
+                                <input type="radio" name="demandOptions" id="demandYes" value="yes" required data-validation-required-message="Please choose yes or no"> Yes </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="demandOptions" id="demandNo" value="no"> No </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <label for="parkingSpaces">Approximately, how many spaces do you have?</label>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control" name="parkingSpaces" data-validation-required-message="Please choose a number from the dropdown" required>
+                                <option value="">select one</option>
+                                <option value="1-20">1-20</option>
+                                <option value="21-50">21-50</option>
+                                <option value="50+">50+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_subject" value="Free Trial Inquiry" />
+                    <input type="hidden" name="_format" value="plain" />
+                    <input type="hidden" name="_cc" value="willbrooksnz@gmail.com" />
+                    <input type="hidden" name="_cc" value="tony@unclestu.com" />
+                    <div class="clearfix"></div>
+                    <div class="col-lg-12 text-center">
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn-xl">Submit</button>
                     </div>
                 </form>
             </div>
@@ -244,273 +241,58 @@
         </div>
     </footer>
 
-     <!-- Portfolio Modals -->
- 
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+    <!-- Contact Modals -->
+<div class="portfolio-modal modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"> </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Dreams</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/dreams.png" class="img-responsive img-centered" alt="image-alt">
-                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2></h2>
+                        <hr class="star-primary">
+                        <p></p>
+                        <ul class="list-inline item-details">
+                            <li>Client: <strong><a href="http://startbootstrap.com"></a>
+                                    </strong> </li>
+                            <li>Date: <strong><a href="http://startbootstrap.com"></a>
+                                    </strong> </li>
+                            <li>Service: <strong><a href="http://startbootstrap.com"></a>
+                                    </strong> </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+</div>
+<div class="portfolio-modal modal fade" id="termsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"> </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Escape</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/escape.png" class="img-responsive img-centered" alt="image-alt">
-                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-left">
+                    <div class="modal-body">
+                        <h3>Terms of use</h3>
+                        <hr class="star-primary">
+                        <p>Offendit praesentibus ea vidisse. Amet tempor arbitror, do aute possumus o est magna irure ex cupidatat, ea velit occaecat efflorescere, et irure eram quis probant ita ingeniis magna est mentitum graviterque, nostrud nam quis doctrina, legam quibusdam consequat. Esse despicationes mentitum veniam fabulas aut sed an quis summis elit et nam aliquip o consequat, senserit summis quem et sunt. Amet philosophari proident multos mandaremus, ea do aute multos quis, se se irure varias nulla, quis id eu minim proident ab nescius est lorem pariatur, est o aute elit aliqua, quo proident aut incididunt, mandaremus transferrem eu probant. Quae fabulas senserit. Eu iudicem despicationes, hic labore incurreret appellat, iis nulla velit o nescius te veniam an hic quorum voluptate ita est veniam domesticarum, legam quo ita amet tempor, tempor exquisitaque ab consequat, veniam deserunt et enim nisi. Nulla tempor a dolore elit, qui summis amet multos doctrina.</p>
+                        <!--                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Golden</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/golden.png" class="img-responsive img-centered" alt="image-alt">
-                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Treehouse</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/treehouse.png" class="img-responsive img-centered" alt="image-alt">
-                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Round Icons</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/roundicons.png" class="img-responsive img-centered" alt="image-alt">
-                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Startup Framework</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/startup-framework.png" class="img-responsive img-centered" alt="image-alt">
-                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
- <div class="portfolio-modal modal fade" id="termsModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 text-left">
-                        <div class="modal-body">
-                            <h3>Terms of use</h3>
-                            <hr class="star-primary">
-                            <p>Offendit praesentibus ea vidisse. Amet tempor arbitror, do aute possumus o est
-                                magna irure ex cupidatat, ea velit occaecat efflorescere, et irure eram quis
-                                probant ita ingeniis magna est mentitum graviterque, nostrud nam quis doctrina,
-                                legam quibusdam consequat. Esse despicationes mentitum veniam fabulas aut sed an
-                                quis summis elit et nam aliquip o consequat, senserit summis quem et sunt. Amet
-                                philosophari proident multos mandaremus, ea do aute multos quis, se se irure
-                                varias nulla, quis id eu minim proident ab nescius est lorem pariatur, est o
-                                aute elit aliqua, quo proident aut incididunt, mandaremus transferrem eu
-                                probant. Quae fabulas senserit. Eu iudicem despicationes, hic labore incurreret
-                                appellat, iis nulla velit o nescius te veniam an hic quorum voluptate ita est
-                                veniam domesticarum, legam quo ita amet tempor, tempor exquisitaque ab
-                                consequat, veniam deserunt et enim nisi. Nulla tempor a dolore elit, qui summis
-                                amet multos doctrina.</p>
-<!--                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
- <!-- Term Modals -->
-
+</div>
+<!-- Term Modals -->
      <!-- jQuery Version 1.11.0 -->
     <script src="/parkalott//js/jquery-1.11.0.js"></script>
 

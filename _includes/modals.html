@@ -1,76 +1,52 @@
- <!-- Portfolio Modals -->
- {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+<!-- Contact Modals -->
+<div class="portfolio-modal modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"> </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.description }}</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>{{ post.title }}</h2>
+                        <hr class="star-primary">
+                        <p>{{ post.description }}</p>
+                        <ul class="list-inline item-details">
+                            <li>Client: <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
+                                    </strong> </li>
+                            <li>Date: <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
+                                    </strong> </li>
+                            <li>Service: <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
+                                    </strong> </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-{% endfor %}
- <div class="portfolio-modal modal fade" id="termsModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+</div>
+<div class="portfolio-modal modal fade" id="termsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"> </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 text-left">
-                        <div class="modal-body">
-                            <h3>Terms of use</h3>
-                            <hr class="star-primary">
-                            <p>Offendit praesentibus ea vidisse. Amet tempor arbitror, do aute possumus o est
-                                magna irure ex cupidatat, ea velit occaecat efflorescere, et irure eram quis
-                                probant ita ingeniis magna est mentitum graviterque, nostrud nam quis doctrina,
-                                legam quibusdam consequat. Esse despicationes mentitum veniam fabulas aut sed an
-                                quis summis elit et nam aliquip o consequat, senserit summis quem et sunt. Amet
-                                philosophari proident multos mandaremus, ea do aute multos quis, se se irure
-                                varias nulla, quis id eu minim proident ab nescius est lorem pariatur, est o
-                                aute elit aliqua, quo proident aut incididunt, mandaremus transferrem eu
-                                probant. Quae fabulas senserit. Eu iudicem despicationes, hic labore incurreret
-                                appellat, iis nulla velit o nescius te veniam an hic quorum voluptate ita est
-                                veniam domesticarum, legam quo ita amet tempor, tempor exquisitaque ab
-                                consequat, veniam deserunt et enim nisi. Nulla tempor a dolore elit, qui summis
-                                amet multos doctrina.</p>
-<!--                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>-->
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-left">
+                    <div class="modal-body">
+                        <h3>Terms of use</h3>
+                        <hr class="star-primary">
+                        <p>Offendit praesentibus ea vidisse. Amet tempor arbitror, do aute possumus o est magna irure ex cupidatat, ea velit occaecat efflorescere, et irure eram quis probant ita ingeniis magna est mentitum graviterque, nostrud nam quis doctrina, legam quibusdam consequat. Esse despicationes mentitum veniam fabulas aut sed an quis summis elit et nam aliquip o consequat, senserit summis quem et sunt. Amet philosophari proident multos mandaremus, ea do aute multos quis, se se irure varias nulla, quis id eu minim proident ab nescius est lorem pariatur, est o aute elit aliqua, quo proident aut incididunt, mandaremus transferrem eu probant. Quae fabulas senserit. Eu iudicem despicationes, hic labore incurreret appellat, iis nulla velit o nescius te veniam an hic quorum voluptate ita est veniam domesticarum, legam quo ita amet tempor, tempor exquisitaque ab consequat, veniam deserunt et enim nisi. Nulla tempor a dolore elit, qui summis amet multos doctrina.</p>
+                        <!--                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
- <!-- Term Modals -->
+</div>
+<!-- Term Modals -->
