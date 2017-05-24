@@ -26,6 +26,10 @@ body {
     color: #0072BC;
 }
 
+.text-alternative {
+    color: #4DCCBD;
+}
+
 p {
     font-size: 18.2px;
     font-weight: 300;
@@ -48,6 +52,7 @@ a.active {
 
 a {
     color: #0072BC;
+    text-decoration: none;
 }
 
 a:hover,
@@ -107,12 +112,8 @@ section .intro-heading{
 }
 
 section .intro-heading .company-name{
-    background-color: #FFFFFF;
-    color:#0072BC;
-    padding-left: 8px;
-    padding-right: 8px;
+    color:#4DCCBD;
 }
-
 
 .img-centered {
     margin: 0 auto;
@@ -694,12 +695,14 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #0072BC;
+/*    background: #0072BC;*/
+    background: transparent;
 }
 
 ::selection {
     text-shadow: none;
-    background: #0072BC;
+/*    background: #0072BC;*/
+    background: transparent;
 }
 
 img::selection {
