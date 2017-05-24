@@ -717,4 +717,14 @@ body {
     webkit-tap-highlight-color: #0072BC;
 }
 
+.desktop-right{
+    text-align: left;
+}
+
+@media(min-width:768px) {
+    .desktop-right{
+        text-align: right;
+    }
+}
+
 
