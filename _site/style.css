@@ -106,6 +106,13 @@ section .intro-heading{
     font-weight: 700;
 }
 
+section .intro-heading .company-name{
+    background-color: #FFFFFF;
+    color:#0072BC;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 
 .img-centered {
     margin: 0 auto;
@@ -284,6 +291,12 @@ fieldset[disabled] .btn-xl.active {
     background-color: #2360;
 }
 
+.navbar-brand {
+    width:60px;
+    padding:14px;
+}
+
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -299,6 +312,7 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        padding:5px;
     }
 
     .navbar-default .navbar-nav>.active>a {
@@ -366,7 +380,6 @@ header .intro-text .intro-heading{
     line-height: 36px;
     color:#FFF;
 }
-
 
 @media(min-width:768px) {
     header .intro-text {
