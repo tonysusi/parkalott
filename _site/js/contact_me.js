@@ -57,7 +57,7 @@ $(function () {
                 $("select[name=parkingSpaces]").parent().parent().find("p.help-block").text('');
             }
 
-            var inputs = document.getElementsByTagName('input');
+            var inputs = document.getElementsByTagName('input[type="hidden"]');
             for (var i = 0; i < inputs.length; ++i) {
               console.log(inputs[i]);
             }
