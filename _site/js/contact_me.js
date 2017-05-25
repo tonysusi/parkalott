@@ -73,7 +73,8 @@ $(function () {
                         phone: phone,
                         email: email,
                         demand: demand,
-                        size: size
+                        size: size,
+                        _cc: 'tony@uncelstu.com'
                     },
                     cache: false,
                     success: function () {
