@@ -57,10 +57,15 @@ $(function () {
                 $("select[name=parkingSpaces]").parent().parent().find("p.help-block").text('');
             }
 
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; ++i) {
+              console.log(inputs[i]);
+            }
+
+
             if (valid) {
                 $.ajax({
                     url: "https://formspree.io/meealljm",
-                    //                url: "https://formspree.io/tonysjunk@gmail.com",
                     method: "POST",
                     dataType: "json",
                     data: {
@@ -68,8 +73,7 @@ $(function () {
                         phone: phone,
                         email: email,
                         demand: demand,
-                        size: size,
-                        _cc: 'tony@unclestu.com'
+                        size: size
                     },
                     cache: false,
                     success: function () {
