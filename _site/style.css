@@ -111,7 +111,7 @@ section .intro-heading{
     font-weight: 700;
 }
 
-section .intro-heading .company-name{
+.company-name{
     color:#4DCCBD;
 }
 
