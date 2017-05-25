@@ -74,7 +74,8 @@ $(function () {
                         email: email,
                         demand: demand,
                         size: size,
-                        _cc: 'tony@uncelstu.com'
+                        _cc: 'tony@uncelstu.com',
+                        _replyto: email,
                     },
                     cache: false,
                     success: function () {
