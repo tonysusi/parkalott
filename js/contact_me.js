@@ -59,7 +59,7 @@ $(function () {
 
             if (valid) {
                 $.ajax({
-                    url: "https://formspree.io/xeeeyzqx",
+                    url: "https://formspree.io/meealljm",
                     //                url: "https://formspree.io/tonysjunk@gmail.com",
                     method: "POST",
                     dataType: "json",
@@ -68,7 +68,8 @@ $(function () {
                         phone: phone,
                         email: email,
                         demand: demand,
-                        size: size
+                        size: size,
+                        _cc: 'tony@unclestu.com'
                     },
                     cache: false,
                     success: function () {
