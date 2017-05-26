@@ -2,8 +2,8 @@
 color:
   primary: 0072BC
   secondary: 004470
-  secondary-dark: 333
-  muted: 777
+  secondary-dark: 333333
+  muted: 777777
   #alternative: 95E06C
   alternative: 4DCCBD
 

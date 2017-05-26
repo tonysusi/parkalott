@@ -74,7 +74,7 @@ $(function () {
                         email: email,
                         demand: demand,
                         size: size,
-                        _cc: 'willbrooksnz@gmail.com',
+                        _cc: 'tony@unclestu.com',
                         _replyto: email,
                         _subject: 'Parkalott: Free Trial Inquiry'
                     },
