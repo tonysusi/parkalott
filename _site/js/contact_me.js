@@ -76,6 +76,7 @@ $(function () {
                         size: size,
                         _cc: 'tony@unclestu.com',
                         _replyto: email,
+                        _subject: 'Parkalott: Free Trial Inquiry'
                     },
                     cache: false,
                     success: function () {
