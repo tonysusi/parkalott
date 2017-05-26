@@ -718,3 +718,7 @@ body {
         text-align: right;
     }
 }
+
+.form-control{
+    color:#333333;
+}
